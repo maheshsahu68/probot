@@ -1,0 +1,64 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-image: url('g.jpg');
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+    </style>
+    <title>Cyber Security-Probot</title>
+  </head>
+  <body>
+
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Cyber Security-Probot",
+      "botConversationDescription": "Get Helping Hand towards Cyber security",
+      "botId": "d2d51fa9-fc50-4521-911b-d313520ccf1c",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "d2d51fa9-fc50-4521-911b-d313520ccf1c",
+      "webhookId": "d560c231-1593-410a-ba6c-7a133b0f1b43",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Cyber Security-Probot",
+      "avatarUrl": "https://i.pinimg.com/236x/18/5d/f0/185df07b2d6aeb4989536661af027a78.jpg",
+      "stylesheet": "https://i.pinimg.com/236x/18/5d/f0/185df07b2d6aeb4989536661af027a78.jpg",
+      "frontendVersion": "v1",
+      "showPoweredBy": false,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": false,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>

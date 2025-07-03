@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+      body {
+        background-image: url('g.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background: 0.5; /* Adjust opacity as needed */
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+    </style>
+    <title>Probot</title>
+  </head>
+  <body>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with Probot",
+          "botConversationDescription": "Helping hand towards your career .........",
+          "botId": "7c14c506-39c8-44b3-923b-6c3f971721c2",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "7c14c506-39c8-44b3-923b-6c3f971721c2",
+          "webhookId": "5deb6a88-3692-40e5-9567-c8f3cf21db4e",
+          "lazySocket": true,
+          "themeName": "prism",
+          "botName": "Probot",
+          "stylesheet": "https://webchat-styler-css.botpress.app/prod/0f40dd1a-83ca-4224-ad45-4ab95075f234/v63266/style.css",
+          "frontendVersion": "v1",
+          "showPoweredBy": false,
+          "theme": "prism",
+          "themeColor": "#2563eb",
+          "hideWidget": true,
+          "disableAnimations": true,
+          "closeOnEscape": false,
+          "showConversationsButton": false,
+          "enableTranscriptDownload": false,
+          "className": "webchatIframe",
+          "containerWidth": "100%25",
+          "layoutWidth": "100%25",
+          "showCloseButton": false
+      });
+      window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+    </script>
+  </body>
+</html>

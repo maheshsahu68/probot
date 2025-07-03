@@ -1,0 +1,65 @@
+
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+      body {
+        background-image: url('g.jpg');
+
+        margin: 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #bp-web-widget-container {
+        max-height: 90%;
+        width: 481px;
+        margin: auto;
+        flex-grow: 1;
+      }
+      #bp-web-widget-container div {
+        height: 100%;
+      }
+      .webchatIframe {
+        position: relative !important;
+      }
+    </style>
+    <title>Personal Support</title>
+  </head>
+  <body>
+
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with Personal Support",
+      "botConversationDescription": "Get in personal touch with our probot",
+      "botId": "cf0be780-ad83-44c6-8a69-04caacfbb088",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "cf0be780-ad83-44c6-8a69-04caacfbb088",
+      "webhookId": "5779113c-5763-42ab-8867-595163f92251",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "Personal Support",
+      "stylesheet": "https://webchat-styler-css.botpress.app/prod/0f40dd1a-83ca-4224-ad45-4ab95075f234/v37550/style.css",
+      "frontendVersion": "v1",
+      "showPoweredBy": false,
+      "theme": "prism",
+      "themeColor": "#2563eb",
+      "hideWidget": true,
+      "disableAnimations": true,
+      "closeOnEscape": false,
+      "showConversationsButton": false,
+      "enableTranscriptDownload": false,
+      "className": "webchatIframe",
+      "containerWidth": "100%25",
+      "layoutWidth": "100%25",
+      "showCloseButton": false
+  });
+window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+</script>
+
+  </body>
+</html>
